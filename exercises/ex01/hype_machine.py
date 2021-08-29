@@ -1,7 +1,13 @@
-# TODO: Write docstring here
+"""Hypemachine with inputs and strings"""
 
-# TODO: Initialize __author__ variable here
+__author__ = "730317780"
 
-# TODO: Implement your program logic here
+name: str = input("What is your name? ")
+print("you entered: ")
+print(name)
 
-#test
+print(name + ", you will have a great semester!")
+
+print("i believe in you, " + name)
+
+print("good luck " + name + " , even though you won't need it!")
