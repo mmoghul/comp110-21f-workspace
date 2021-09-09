@@ -1,6 +1,11 @@
-"""Counting letters in a string."""
+"""Counting letters in a string"""
 
-__author__ = "ENTER YOUR 9-DIGIT PID HERE"
+__author__ = "730317780"
 
+x: str = str(input(" What letter do you want to seach for? "))
+y: str = str(input("Enter a word: "))
 
-# Begin your solution here...
+z =(len(y)
+
+while z == 1:
+    print 

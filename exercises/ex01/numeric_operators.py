@@ -1,4 +1,5 @@
-"""Hypemachine with inputs and strings"""
+"""Hypemachine with inputs and strings.
+"""
 
 __author__ = "730317780"
 
