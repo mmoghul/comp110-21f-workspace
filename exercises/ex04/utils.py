@@ -2,9 +2,10 @@
 
 __author__ = "123456789"
 
+
 # ________ALL__________
-def all(nums: list, num: int) -> bool:
-    """return true if all numbers are equal, otherwise return false"""
+def all(nums: list[int], num: int) -> bool:
+    """Return true if all numbers are equal, otherwise return false."""
     if len(nums) == 0:
         return False
     size = len(nums) - 1
@@ -17,7 +18,7 @@ def all(nums: list, num: int) -> bool:
 
 # _______IS EQUAL_______
 def is_equal(n1: list[int], n2: list[int]) -> bool:
-    """return True if every element at every index is equal in both lists, else return false"""
+    """Return True if every element at every index is equal in both lists, else return false."""
     if len(n1) != len(n2):
         return False
     size = len(n1) - 1
@@ -30,7 +31,7 @@ def is_equal(n1: list[int], n2: list[int]) -> bool:
 
 # _______MAX_______
 def max(inp: list[int]) -> int:
-    """return max vlaue, or if list is empty, return error message"""
+    """Return max vlaue, or if list is empty, return error message."""
     if len(inp) == 0:
         raise ValueError("max() arg is an empty List")
     maximum = inp[0]
@@ -40,12 +41,3 @@ def max(inp: list[int]) -> int:
             maximum = inp[i]
         i += 1
     return maximum
-
-
-def main():
-    print(max([56, 47, 33]))
-    is_equal([543, 907, 123], [534543, 98, 1])
-
-
-if __name__ == "__main__":
-    main()
