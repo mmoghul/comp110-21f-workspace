@@ -5,10 +5,12 @@ __author__ = "123456789"
 # ________ALL__________
 
 
-def all(l: int, num: int) -> bool:
-    size = len(l) - 1
+def all(nums: list, num: int) -> bool:
+    if len(nums) == 0:
+        return True
+    size = len(nums) - 1
     while size >= 0:
-        if l[size] != num:
+        if nums[size] != num:
             return False
         size -= 1
     return True
@@ -40,6 +42,7 @@ def max(input: list[int]) -> int:
     while i < len(input):
         if input[i] > maximum:
             maximum = input[i]
+        i += 1
     return input[i]
 
 
