@@ -14,6 +14,7 @@ def all(nums: list, num: int) -> bool:
         size -= 1
     return True
 
+
 # _______IS EQUAL_______
 def is_equal(n1: list[int], n2: list[int]) -> bool:
     """return True if every element at every index is equal in both lists, else return false"""
@@ -26,15 +27,15 @@ def is_equal(n1: list[int], n2: list[int]) -> bool:
         size -= 1
     return True
 
+
 # _______MAX_______
 def max(inp: list[int]) -> int:
     """return max vlaue, or if list is empty, return error message"""
     if len(inp) == 0:
         raise ValueError("max() arg is an empty List")
     maximum = inp[0]
-    i = 0
-
-    while i < len(inp) - 1: 
+    i = 1
+    while i < len(inp):
         if inp[i] > maximum:
             maximum = inp[i]
         i += 1
