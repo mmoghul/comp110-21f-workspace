@@ -12,15 +12,15 @@ def only_evens(ints: list[int]) -> list[int]:
     return result
 
 
-def sub(l: list[int], start: int, end: int) -> list[int]:
+def sub(list_arg: list[int], start: int, end: int) -> list[int]:
     """Function generate list which is a subset of the given list, between the  start index and end index."""
     if start < 0:
         start = 0
-    if end > len(l):
-        end = len(l)
-    if len(l) == 0 or start > len(l) or end <= 0:
+    if end > len(list_arg):
+        end = len(list_arg)
+    if len(list_arg) == 0 or start > len(list_arg) or end <= 0:
         return []
-    return l[start:end]
+    return list_arg[start:end]
 
 
 def concat(list1: list[int], list2: list[int]) -> list[int]:
