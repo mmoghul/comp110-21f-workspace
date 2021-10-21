@@ -1,0 +1,17 @@
+"""LSO4 IN CLASS ACTIVITY"""
+
+# define a fxn named contains 
+# give 2 args: needle (searching 4) + haystack (list)\
+# return true if needle is found in haystack; return false otherwise. loop thry each index in list. test if item stored @ index = needle --> return true or flase accordingly
+def main() -> None:
+    names: list[str] = ["Kris", "Kaki"]
+    print(contains("Kris", names))
+
+def contains(needle: str, haystack: list[str]) -> bool: 
+    """return true if needle is found in haystack, false otherwise"""
+    i: int = 0
+    while i < len(haystack): 
+        if haystack[i] == needle: 
+            return True 
+    i += 1
+    return False 
