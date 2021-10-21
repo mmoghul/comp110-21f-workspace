@@ -3,7 +3,7 @@
 __author__ = "123456789"
 
 
-def invert_dict(d: dict):
+def invert(d: dict[str, str]) -> dict[str, str]:
     res = {}
     keys = list(d.keys())
     for k in keys:
@@ -13,10 +13,10 @@ def invert_dict(d: dict):
     return res
 
 
-def favorite_color(d: dict):
+def favorite_color(d: dict[str, str]) -> dict[str, str]:
     colors = {}
     for v in list(d.values()):
-        if not v in colors:
+        if v not in colors:
             colors[v] = 0
         colors[v] += 1
 
@@ -29,7 +29,7 @@ def favorite_color(d: dict):
 def count(l_arg: list):
     d = {}
     for l in l_arg:
-        if not l in d:
+        if l not in d:
             d[l] = 0
         d[l] += 1
 
