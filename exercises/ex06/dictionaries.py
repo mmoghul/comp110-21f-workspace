@@ -8,12 +8,12 @@ def invert(d: dict[str, str]) -> dict[str, str]:
     keys = list(d.keys())
     for k in keys:
         if keys.count(k) > 1:
-            raise KeyError
+            raise KeyError("KeyError")
         res[d[k]] = k
     return res
 
 
-def favorite_color(d: dict[str, str]) -> dict[str, str]:
+def favorite_color(d: dict[str, str]) -> [str]:
     colors = {}
     for v in list(d.values()):
         if v not in colors:
@@ -26,11 +26,11 @@ def favorite_color(d: dict[str, str]) -> dict[str, str]:
     return keys[vals.index(max(vals))]
 
 
-def count(l_arg: list):
-    d = {}
-    for l in l_arg:
-        if l not in d:
-            d[l] = 0
-        d[l] += 1
+def count(l_arg: list[str]) -> dict[str, str]:
+    res = {}
+    for current in l_arg:
+        if current not in res:
+            res[current] = 0
+        res[current] += 1
 
-    return d
+    return res

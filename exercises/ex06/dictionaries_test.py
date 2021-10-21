@@ -36,15 +36,18 @@ def test_colors2() -> None:
 
 def test_colors3() -> None:
     """Colors edge case."""
-    assert favorite_color(
-        {
-            "Mennah": "black",
-            "Julie": "green",
-            "Yasmeen": "green",
-            "Hana": "pink",
-            "Sidra": "black",
-        }
-    ) == ["black"]
+    assert (
+        favorite_color(
+            {
+                "Mennah": "black",
+                "Julie": "green",
+                "Yasmeen": "green",
+                "Hana": "pink",
+                "Sidra": "black",
+            }
+        )
+        == ["black"]
+    )
 
 
 def test_count1() -> None:
