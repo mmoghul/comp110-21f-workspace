@@ -8,7 +8,7 @@ def invert(d: dict[str, str]) -> dict[str, str]:
     keys = list(d.keys())
     for k in keys:
         if keys.count(k) > 1:
-            raise KeyError("KeyError")
+            raise KeyError("More than one of the same key!")
         res[d[k]] = k
     return res
 
@@ -26,7 +26,7 @@ def favorite_color(d: dict[str, str]) -> [str]:
     return keys[vals.index(max(vals))]
 
 
-def count(l_arg: list[str]) -> dict[str, str]:
+def count(l_arg: list[str]) -> dict[str, int]:
     res = {}
     for current in l_arg:
         if current not in res:
